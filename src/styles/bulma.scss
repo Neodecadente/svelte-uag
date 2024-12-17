@@ -1,0 +1,28 @@
+/* src/styles/global.scss */
+
+// Custom fonts (optional)
+$cinzel: 'Cinzel', serif;
+
+// Fantasy theme colors
+$gold: #b08d57;
+$deep-green: #4a7c59;
+$emerald-green: #8cbaa3;
+$dark-red: #9e2b25;
+$bronze-yellow: #e09f3e;
+$parchment-beige: #f4f1de;
+$charcoal-gray: #2f2e2e;
+
+// Import Bulma source
+@use 'bulma/sass' with (
+  $family-primary: $cinzel,
+  $primary: $gold,
+  $link: $deep-green,
+  $success: $emerald-green,
+  $danger: $dark-red,
+  $warning: $bronze-yellow,
+  $light: $parchment-beige,
+  $dark: $charcoal-gray
+);
+
+// Import Cinzel font
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');

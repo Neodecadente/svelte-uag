@@ -4,7 +4,8 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "npm run build-bulma && npm run vite-dev",
+		"vite-dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -13,7 +14,8 @@
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run && npm run test:e2e",
-		"test:e2e": "playwright test"
+		"test:e2e": "playwright test",
+		"build-bulma": "sass --load-path=node_modules src/styles/bulma.scss src/styles/bulma.css"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.3",
@@ -27,11 +29,15 @@
 		"globals": "^15.0.0",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.6",
+		"sass": "^1.83.0",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
 		"typescript": "^5.0.0",
 		"typescript-eslint": "^8.0.0",
 		"vite": "^6.0.0",
 		"vitest": "^2.0.4"
+	},
+	"dependencies": {
+		"bulma": "^1.0.2"
 	}
 }
