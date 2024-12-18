@@ -17,7 +17,7 @@
   <!-- Title and Description -->
   <h1 class="title mt-4">Unnamed Arena Game (UAG)</h1>
   <p class="subtitle mt-2">
-      An asynchronous card-based auto chess battler. Control a single character and equip them with powerful weapons, spells, and equipment to outsmart your opponents.
+    A strategic turn-based auto-battler where you forge your hero's destiny with powerful weapons, spells, and gear. Outsmart your opponents, dominate the battlefield, and rise to glory!
   </p>
 
   <!-- Buttons -->
