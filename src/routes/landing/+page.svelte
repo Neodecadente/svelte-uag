@@ -1,11 +1,5 @@
 <script>
-  const signIn = () => {
-      console.log("Sign In clicked");
-  };
-
-  const signUp = () => {
-      console.log("Sign Up clicked");
-  };
+	import { redirect } from "@sveltejs/kit";
 </script>
 
 <div class="section is-flex is-flex-direction-column is-align-items-center is-justify-content-center has-text-centered" style="height: 100vh;">
@@ -22,7 +16,7 @@
 
   <!-- Buttons -->
   <div class="buttons mt-5">
-      <button class="button is-primary is-medium" on:click={signIn}>Sign In</button>
-      <button class="button is-link is-medium" on:click={signUp}>Sign Up</button>
+      <a class="button is-primary is-medium" href="/signin">Sign In</a>
+      <a class="button is-link is-medium" href="/signup">Sign Up</a>
   </div>
 </div>
